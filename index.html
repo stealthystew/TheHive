@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pool Liner Replacement in Hamilton & Burlington | Dundas Valley Pools</title>
+  <meta name="description" content="Dundas Valley Pools provides custom-fit inground pool liner replacement in Hamilton, Dundas, Ancaster, Burlington, Oakville and surrounding areas. Request a liner quote today." />
+  <meta name="keywords" content="pool liner replacement Hamilton, pool liner replacement Burlington, inground pool liner replacement, custom pool liner installation, Dundas pool liner replacement" />
+  <style>
+    :root {
+      --bg: #f7fafd;
+      --white: #ffffff;
+      --text: #213042;
+      --muted: #5c6f82;
+      --heading: #122033;
+      --accent: #0b7ac7;
+      --accent-dark: #095e99;
+      --line: #e1eaf2;
+      --shadow: 0 10px 24px rgba(18, 32, 51, 0.08);
+      --radius: 14px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
+    img { max-width: 100%; display: block; border-radius: 10px; }
+    a { color: inherit; }
+
+    .container { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+    .section { padding: 4.5rem 0; }
+    h1, h2, h3 { color: var(--heading); line-height: 1.2; margin: 0 0 .8rem; }
+    h1 { font-size: clamp(1.85rem, 4vw, 2.8rem); }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+    h3 { font-size: 1.15rem; }
+    p { margin: 0 0 1rem; line-height: 1.65; }
+
+    .hero { background: linear-gradient(120deg, #fff 0%, #eef7ff 70%); padding: 4.5rem 0 3.5rem; }
+    .hero-wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: center; }
+    .hero ul { margin: 1.2rem 0 1.5rem; padding-left: 1.2rem; }
+    .hero li { margin-bottom: .55rem; }
+    .cta-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+
+    .btn { display: inline-block; border: 1px solid transparent; border-radius: 999px; padding: .85rem 1.25rem; text-decoration: none; font-weight: 700; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary { background: #fff; color: var(--heading); border-color: #c8d8e8; }
+
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .trust { margin-top: -1.2rem; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; padding: 1rem; }
+    .trust-item { text-align: center; font-weight: 600; color: var(--heading); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.2rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; }
+
+    .content-card { padding: 1.3rem; }
+    .muted { color: var(--muted); }
+
+    .ba-wrap { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; }
+    .caption { font-size: .94rem; color: var(--muted); margin-top: .5rem; }
+
+    .steps { counter-reset: step; }
+    .step { padding: 1rem 1rem 1rem 3.1rem; position: relative; }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute; left: 1rem; top: .9rem;
+      width: 1.6rem; height: 1.6rem; border-radius: 50%;
+      background: #d8ecfb; color: #0d5f9a; display: grid; place-items: center; font-weight: 700;
+    }
+
+    form { padding: 1.2rem; }
+    .form-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: .85rem; }
+    .full { grid-column: 1 / -1; }
+    label { font-size: .9rem; font-weight: 600; margin-bottom: .3rem; display: block; }
+    input, select, textarea {
+      width: 100%; border: 1px solid #ccd9e5; border-radius: 10px; padding: .75rem .85rem;
+      font: inherit; color: inherit; background: #fff;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+
+    .faq details { border: 1px solid var(--line); border-radius: 10px; padding: .8rem .95rem; background: #fff; }
+    .faq details + details { margin-top: .7rem; }
+    .faq summary { font-weight: 700; cursor: pointer; }
+
+    .service-list { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .pill { background: #fff; border: 1px solid #d7e4ef; padding: .45rem .75rem; border-radius: 999px; font-size: .92rem; }
+
+    .final-cta { text-align: center; }
+
+    .mobile-sticky {
+      position: fixed; bottom: .8rem; left: 50%; transform: translateX(-50%);
+      width: calc(100% - 1rem); max-width: 500px; z-index: 60;
+      background: #ffffffeb; backdrop-filter: blur(6px);
+      border: 1px solid #d8e5f0; border-radius: 999px; box-shadow: var(--shadow);
+      padding: .4rem; display: none; gap: .45rem;
+    }
+    .mobile-sticky a { flex: 1; text-align: center; padding: .7rem .5rem; border-radius: 999px; text-decoration: none; font-weight: 700; }
+
+    @media (max-width: 920px) {
+      .hero-wrap, .grid-2, .grid-3, .grid-4, .ba-wrap, .form-grid, .trust-grid { grid-template-columns: 1fr; }
+      .section { padding: 3.2rem 0; }
+      .mobile-sticky { display: flex; }
+      body { padding-bottom: 5.5rem; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Pool Liner Replacement",
+    "serviceType": "Inground Pool Liner Replacement",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Dundas Valley Pools",
+      "areaServed": ["Hamilton", "Dundas", "Ancaster", "Burlington", "Oakville", "Stoney Creek", "Waterdown", "Flamborough"]
+    },
+    "areaServed": ["Hamilton", "Burlington", "Dundas", "Ancaster", "Oakville", "Stoney Creek", "Waterdown", "Flamborough"],
+    "description": "Custom pool liner measurement and installation for inground vinyl pools, including complex shapes, stairs and custom features.",
+    "offers": { "@type": "Offer", "priceSpecification": "Quote-based" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How long does a pool liner replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most projects include a measurement stage, ordering lead time, and an installation day. The on-site replacement is typically completed quickly once the liner arrives and prep is finished."}},
+      {"@type":"Question","name":"Do you replace liners for complex pool shapes?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle custom shapes, stairs, benches, and deep-end transitions that require detailed measuring and careful fitting."}},
+      {"@type":"Question","name":"Can I choose the liner pattern?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide multiple liner pattern options and help you choose one that suits your backyard style and budget."}},
+      {"@type":"Question","name":"Do you repair the pool floor before installing the liner?","acceptedAnswer":{"@type":"Answer","text":"If floor or wall prep is needed, we address it before installation so the new liner sits properly and lasts longer."}},
+      {"@type":"Question","name":"When is the best time to replace a liner?","acceptedAnswer":{"@type":"Answer","text":"Spring and early summer are common, but replacement can be planned whenever your liner shows leaks, brittleness, pulling, or heavy wear."}},
+      {"@type":"Question","name":"Do I need to be home?","acceptedAnswer":{"@type":"Answer","text":"Usually only for key steps such as confirmation and access. We communicate each stage clearly so scheduling is straightforward."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <h1>Pool Liner Replacement in Hamilton, Burlington &amp; Surrounding Areas</h1>
+        <p class="muted">Custom-fit inground pool liners installed properly — measured carefully, installed cleanly, and built to make your backyard feel fresh again.</p>
+        <ul>
+          <li>Custom liner measurements</li>
+          <li>Complex shapes, stairs, and step sections</li>
+          <li>Old liner removal and floor/wall prep</li>
+          <li>Professional installation and startup support</li>
+          <li>Serving Hamilton, Dundas, Burlington, Ancaster, Oakville &amp; surrounding areas</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#quote-form">Request a Liner Quote</a>
+          <a class="btn btn-secondary" href="tel:+19050000000">Call / Text for Pricing</a>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1200&q=80" alt="Clean residential inground pool with new blue liner in a landscaped backyard" />
+    </div>
+  </header>
+
+  <div class="container trust">
+    <div class="card trust-grid">
+      <div class="trust-item">Local Pool Specialists</div>
+      <div class="trust-item">Custom-Fit Liners</div>
+      <div class="trust-item">Clean Installations</div>
+      <div class="trust-item">Clear Communication</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Is your pool liner faded, wrinkled, leaking, or pulling away?</h2>
+        <p>Visible fading, brittle vinyl, tears, wrinkles, staining, or water loss are common signs a liner is nearing end-of-life. If your liner is pulling out of track or leaking, a properly measured replacement can protect the pool structure and restore appearance.</p>
+      </div>
+      <div class="card content-card">
+        <h3>Common warning signs</h3>
+        <ul>
+          <li>Noticeable fading and staining</li>
+          <li>Wrinkles and shifting vinyl</li>
+          <li>Tears, pinholes, and water loss</li>
+          <li>Liner bead pulling from track</li>
+          <li>Brittle texture or cracking</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2>A New Liner Can Make an Old Pool Feel New Again</h2>
+      <div class="ba-wrap">
+        <div class="card content-card">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80" alt="Older inground vinyl pool surface with faded liner and wear" />
+          <p class="caption">Before: worn, faded liner with visible age.</p>
+        </div>
+        <div class="card content-card">
+          <img src="https://images.unsplash.com/photo-1621274116094-27f138fce53e?auto=format&fit=crop&w=1200&q=80" alt="Refreshed residential pool with crisp waterline and newly installed liner" />
+          <p class="caption">After: refreshed look with a clean, custom-fit liner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>The Liner Is Only as Good as the Measurement and Install</h2>
+        <p>Even premium liner material can fail early if measurements or prep are rushed. Accurate dimensions, floor/wall prep, and experienced fitting help avoid wrinkles, stress points, and premature wear.</p>
+      </div>
+      <div>
+        <h2>Have Stairs, Benches, or a Complex Pool Shape? We Can Help.</h2>
+        <p>Custom pools, older shells, deep-end slope transitions, integrated steps, and specialty weld sections require tighter tolerances and more installation precision. We plan these details upfront so your liner fits and performs correctly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2>Our Pool Liner Replacement Process</h2>
+      <div class="grid-3 steps">
+        <div class="card step"><h3>Send Photos / Request Quote</h3><p>Share pool photos and details to start planning.</p></div>
+        <div class="card step"><h3>Site Visit &amp; Measurement</h3><p>We confirm dimensions and discuss options onsite.</p></div>
+        <div class="card step"><h3>Liner Selection &amp; Ordering</h3><p>Choose your preferred pattern and finalize specifications.</p></div>
+        <div class="card step"><h3>Removal, Prep &amp; Installation</h3><p>Old liner removal plus floor and wall prep before fitment.</p></div>
+        <div class="card step"><h3>Fill, Startup &amp; Final Checks</h3><p>Final inspection, fit checks, and startup guidance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Choose a Liner Pattern That Fits Your Backyard</h2>
+      <div class="grid-4">
+        <div class="card content-card"><h3>Classic Blue Tile</h3><p class="muted">Timeless, clean water tone.</p></div>
+        <div class="card content-card"><h3>Slate Ripple</h3><p class="muted">Modern texture-inspired finish.</p></div>
+        <div class="card content-card"><h3>Marble Sand</h3><p class="muted">Soft, warm backyard aesthetic.</p></div>
+        <div class="card content-card"><h3>Deep Lagoon</h3><p class="muted">Rich blue depth effect.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container grid-2">
+      <div>
+        <h2>What Does a Pool Liner Replacement Cost?</h2>
+        <p>Every project is quote-based. Cost depends on pool size, shape, depth profile, step and bench details, chosen liner pattern, wall/floor condition, fitting replacements, site access, and any required repairs.</p>
+      </div>
+      <div class="card" id="quote-form">
+        <form>
+          <h3>Request a Liner Quote</h3>
+          <div class="form-grid">
+            <div><label for="name">Name</label><input id="name" name="name" /></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" /></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" /></div>
+            <div><label for="address">Address / City</label><input id="address" name="address" /></div>
+            <div><label for="pool-type">Pool type</label><input id="pool-type" name="pool-type" /></div>
+            <div><label for="pool-size">Approximate pool size</label><input id="pool-size" name="pool-size" /></div>
+            <div class="full"><label for="features">Does the pool have stairs or custom features?</label><input id="features" name="features" /></div>
+            <div class="full"><label for="photos">Upload photos placeholder</label><input id="photos" name="photos" placeholder="Photo upload integration placeholder" /></div>
+            <div class="full"><label for="message">Message</label><textarea id="message" name="message"></textarea></div>
+            <div class="full"><label for="timeline">Preferred timeline</label><input id="timeline" name="timeline" /></div>
+          </div>
+          <p><button class="btn btn-primary" type="button">Submit Quote Request</button></p>
+          <p class="muted">Prefer a faster response? <a href="tel:+19050000000">Call or text us</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <div class="container grid-2">
+      <div>
+        <h2>Frequently Asked Questions</h2>
+        <details><summary>How long does a pool liner replacement take?</summary><p>Most jobs include measurement, manufacturing lead time, and a dedicated install window once the liner arrives.</p></details>
+        <details><summary>Do you replace liners for complex pool shapes?</summary><p>Yes, including custom profiles, step sections, benches, and deep-end transitions.</p></details>
+        <details><summary>Can I choose the liner pattern?</summary><p>Absolutely. We help you compare patterns that fit your style and budget.</p></details>
+      </div>
+      <div>
+        <details><summary>Do you repair the pool floor before installing the liner?</summary><p>Yes, prep and repair are addressed as needed to support a proper fit.</p></details>
+        <details><summary>When is the best time to replace a liner?</summary><p>Any time major wear appears. Spring scheduling is common, but planning ahead helps secure preferred timing.</p></details>
+        <details><summary>Do I need to be home?</summary><p>Usually only for key confirmations and access. We keep communication clear throughout the project.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2>Service Area</h2>
+      <p>We provide inground pool liner replacement services across Hamilton, Dundas, Ancaster, Burlington, Oakville, Stoney Creek, Waterdown, Flamborough, and surrounding communities.</p>
+      <div class="service-list">
+        <span class="pill">Hamilton</span><span class="pill">Dundas</span><span class="pill">Ancaster</span><span class="pill">Burlington</span><span class="pill">Oakville</span><span class="pill">Stoney Creek</span><span class="pill">Waterdown</span><span class="pill">Flamborough</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container card content-card">
+      <h2>Ready to Make Your Pool Look New Again?</h2>
+      <p>Talk with Dundas Valley Pools about your liner replacement project and get a clear, practical quote.</p>
+      <a class="btn btn-primary" href="#quote-form">Request a Pool Liner Quote</a>
+    </div>
+  </section>
+
+  <div class="mobile-sticky">
+    <a class="btn-primary" href="#quote-form">Request Quote</a>
+    <a class="btn-secondary" href="tel:+19050000000">Call / Text</a>
+  </div>
+</body>
+</html>
